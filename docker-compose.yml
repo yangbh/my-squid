@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  squid:
+    build: ./
+    container_name: squid
+    ports:
+      - "3128:3128"
+      - "3127:3127"
+    volumes:
+      - ./cache:/var/spool/squid
+      - ./squid.conf:/etc/squid/squid.conf
+      - ./certs:/certs:ro
+      - ./htpasswd:/etc/squid/passwords
