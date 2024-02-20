@@ -1,7 +1,7 @@
 #!/bin/bash
 
 HTTP_BASIC_USER="m0d9"
-HTTP_BASIC_PASSWORD="fB3QVmlVkPCIa98E"
+HTTP_BASIC_PASSWORD="xxxx"
 DOMAIN="p3.m0d9.me"
 
 # Basic 认证账号密码

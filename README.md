@@ -1,6 +1,8 @@
 # my-squid
 my squid server
 
+1. [x] Basic Auth
+2. [x] HTTPs
 
 # 备注
 - squid-keys.asc 为 https://www.squid-cache.org/pgp.asc
