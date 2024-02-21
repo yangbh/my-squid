@@ -10,8 +10,8 @@ htpasswd -bc htpasswd $HTTP_BASIC_USER $HTTP_BASIC_PASSWORD
 
 # https 证书
 acme.sh --issue -d $DOMAIN --standalone
-acme.sh --installcert -d $DOMAIN --fullchainpath ./certs/$DOMAIN.crt --keypath ./certs/$DOMAIN.key --ecc
-cat ./certs/$DOMAIN.crt ./certs/$DOMAIN.key > ./certs/$DOMAIN.pem
+acme.sh --installcert -d $DOMAIN --fullchainpath ./certs/squid.crt --keypath ./certs/squid.key --ecc
+cat ./certs/squid.crt ./certs/squid.key > ./certs/squid.pem
 
 # docker up
 docker-compose up -d

@@ -4,6 +4,7 @@ services:
   squid:
     build: ./
     # image: b4tman/squid
+    # image: b4tman/squid
     container_name: squid
     ports:
       - "3128:3128"
